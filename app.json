@@ -23,10 +23,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package" : "com.irshaduddin.pushNotification",
+      "googleServicesFile": "./google-services.json",
+      "useNextNotificationsApi":true,
+      "permissions" : ["RECEIVE_BOOT_COMPLETED", "ACCESS_NOTIFICATION_POLICY"]
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/icon.png",
+          "color": "#ffffff"
+        }
+      ]
+    ]
   }
 }
